@@ -27,7 +27,7 @@ install_dependency libxine2-dev
 install_dependency libv4l-dev
 install_dependency python-dev
 install_dependency python-numpy
-install_dependency libtbb-dev
+#install_dependency libtbb-dev
 install_dependency libqt5x11extras5
 install_dependency libqt5opengl5
 install_dependency libqt5opengl5-dev
