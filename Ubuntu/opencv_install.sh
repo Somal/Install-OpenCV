@@ -44,11 +44,11 @@ mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D CMAKE_INSTALL_PREFIX=/usr/local \
-		-D INSTALL_PYTHON_EXAMPLES=OFF \
+		-D INSTALL_PYTHON_EXAMPLES=ON \
 		-D BUILD_DOCS=OFF \
 		-D BUILD_TESTS=OFF \
 		-D BUILD_EXAMPLES=OFF \
-		-D BUILD_opencv_python2=OFF \
+		-D BUILD_opencv_python2=ON \
 		-D BUILD_opencv_python3=ON \
 		-D WITH_1394=OFF \
 		-D WITH_MATLAB=OFF \
