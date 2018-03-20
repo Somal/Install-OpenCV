@@ -60,7 +60,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D WITH_QT=ON \
 		-D WITH_OPENGL=ON \
 		-D WITH_TBB=ON \
-		-D WITH_V4L=ON 
+		-D WITH_V4L=ON \
 		-D CMAKE_CXX_FLAGS="-O3 -funsafe-math-optimizations" \
 		-D CMAKE_C_FLAGS="-O3 -funsafe-math-optimizations" ..
 make -j 4
