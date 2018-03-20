@@ -45,20 +45,24 @@ cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D CMAKE_INSTALL_PREFIX=/usr/local \
 		-D INSTALL_PYTHON_EXAMPLES=ON \
+		-D INSTALL_C_EXAMPLES=ON \
 		-D BUILD_DOCS=OFF \
 		-D BUILD_TESTS=OFF \
 		-D BUILD_opencv_python2=ON \
 		-D BUILD_opencv_python3=ON \
+		-D BUILD_EXAMPLES=ON \
+		-D BUILD_NEW_PYTHON_SUPPORT=ON \
 		-D WITH_1394=OFF \
 		-D WITH_MATLAB=OFF \
 		-D WITH_OPENCL=OFF \
-		-D WITH_TBB=OFF \
 		-D WITH_OPENCLAMDBLAS=OFF \
 		-D WITH_OPENCLAMDFFT=OFF \
+		-D WITH_QT=ON \
+		-D WITH_OPENGL=ON \
+		-D WITH_TBB=ON \
+		-D WITH_V4L=ON 
 		-D CMAKE_CXX_FLAGS="-O3 -funsafe-math-optimizations" \
-		-D CMAKE_C_FLAGS="-O3 -funsafe-math-optimizations" \
-		-D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D INSTALL_C_EXAMPLES=ON \
-		-D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON ..
+		-D CMAKE_C_FLAGS="-O3 -funsafe-math-optimizations" ..
 make -j 4
 sudo make install
 sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
