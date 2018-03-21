@@ -61,7 +61,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D WITH_OPENGL=ON \
 		-D WITH_TBB=ON \
 		-D WITH_V4L=ON \
-		-D PYTHON_EXECUTABLE=/usr/bin/python3 /
+		-D PYTHON_EXECUTABLE=/usr/bin/python3 \
 		-D CMAKE_CXX_FLAGS="-O3 -funsafe-math-optimizations" \
 		-D CMAKE_C_FLAGS="-O3 -funsafe-math-optimizations" ..
 make -j 4
