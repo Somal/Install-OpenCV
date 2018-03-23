@@ -62,6 +62,9 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 		-D WITH_TBB=ON \
 		-D WITH_V4L=ON \
 		-D PYTHON_EXECUTABLE=/usr/bin/python3 \
+		-D PYTHON_INCLUDE=/usr/include/python3.4/ \
+		-D PYTHON_LIBRARY=/usr/lib/arm-linux-gnueabihf/libpython3.4m.so \
+		-D PYTHON_PACKAGES_PATH=/usr/local/lib/python3.4/site-packages/ \
 		-D CMAKE_CXX_FLAGS="-O3 -funsafe-math-optimizations" \
 		-D CMAKE_C_FLAGS="-O3 -funsafe-math-optimizations" ..
 make -j 4
